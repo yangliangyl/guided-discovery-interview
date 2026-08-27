@@ -1,0 +1,4 @@
+interface:
+  display_name: "引导式发现访谈"
+  short_description: "通过持续深度追问，显影个人隐性认知、能力、机会与盲点"
+  default_prompt: "使用 $guided-discovery-interview 采访我，从具体经历中发现隐性认知、能力、机会和认知短板。"
