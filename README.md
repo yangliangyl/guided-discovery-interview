@@ -1,5 +1,7 @@
 # Guided Discovery Interview
 
+[简体中文](README.md) | [English](README.en.md)
+
 一个用于“引导式发现访谈”的 Agent Skill：从具体经历出发，通过连续追问、判断、反证和视角切换，帮助用户发现尚未说清的认知、能力、机会与盲点。
 
 它不是固定问题清单，也不是把用户的朴素表达包装成宏大概念。它更关注：
