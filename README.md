@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md)
 
-一个用于“引导式发现访谈”的 Agent Skill：从具体经历出发，通过连续追问、判断、反证和视角切换，帮助用户发现尚未说清的认知、能力、机会与盲点。
+一个服务于被采访者自我发现的 Agent Skill：它使用专业深度访谈能力，从具体经历出发，通过连续追问、判断、反证和视角切换，帮助用户形成更完整、更准确的自我认识。
 
 它不是固定问题清单，也不是把用户的朴素表达包装成宏大概念。它更关注：
 
@@ -13,7 +13,9 @@
 - 是否能管理支线并返回主线；
 - 是否在信息充分后及时停止下钻。
 
-> 当前版本：`v0.1`。这是一个等待真实用户检验的公开实验版本，而不是完成品。
+完整访谈结束后，它会默认交付一份可追溯、可修正的访谈报告，并在证据充分时给出少量、高密度的行动指点与避坑建议。
+
+> 当前版本：`v0.1.1`。这是一个等待真实用户检验的公开实验版本，而不是完成品。
 
 ## 适用场景
 
@@ -35,11 +37,13 @@ guided-discovery-interview/
 │   └── openai.yaml
 └── references/
     ├── probing-toolkit.md
+    ├── final-interview-report.md
     └── session-ledger.md
 ```
 
 - `SKILL.md`：访谈立场、核心循环、判断标准、主线控制和行动边界。
 - `references/probing-toolkit.md`：下一步怎么追，包括 DICE、连续追问、关键决策深挖和防引导原则。
+- `references/final-interview-report.md`：完整主题结束后的用户报告，包括证据、认知变化、盲区与精炼行动建议。
 - `references/session-ledger.md`：暂停或跨会话继续时，保存主线与认知变化，不把摘要当成原始证据。
 - `agents/openai.yaml`：Codex 中的显示信息和默认调用方式。
 

@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md)
 
-An Agent Skill for guided discovery interviews. It starts from concrete experience and uses sustained probing, judgment, counterevidence, and perspective shifts to help people surface beliefs, abilities, opportunities, and blind spots they have not yet articulated clearly.
+An Agent Skill that uses professional deep-interview capabilities in service of the interviewee's self-discovery. It starts from concrete experience and uses sustained probing, judgment, counterevidence, and perspective shifts to help users form a fuller and more accurate understanding of themselves.
 
 It is not a fixed questionnaire, nor does it dress up plain language as grand theory. It focuses on whether:
 
@@ -13,7 +13,9 @@ It is not a fixed questionnaire, nor does it dress up plain language as grand th
 - side branches are tracked without losing the main thread;
 - probing stops once enough relevant evidence has been obtained.
 
-> Current version: `v0.1`. This is a public experimental release awaiting real-world testing, not a finished product.
+When an agreed interview topic is complete, the Skill delivers an evidence-grounded, correctable final report by default, with a small number of high-density action and pitfall recommendations when the evidence supports them.
+
+> Current version: `v0.1.1`. This is a public experimental release awaiting real-world testing, not a finished product.
 
 ## Use cases
 
@@ -35,11 +37,13 @@ guided-discovery-interview/
 │   └── openai.yaml
 └── references/
     ├── probing-toolkit.md
+    ├── final-interview-report.md
     └── session-ledger.md
 ```
 
 - `SKILL.md`: interview stance, core loop, standards of judgment, main-thread control, and action boundaries.
 - `references/probing-toolkit.md`: probe selection using DICE, laddered probing, critical-decision elicitation, and anti-leading checks.
+- `references/final-interview-report.md`: the client-facing report for a completed topic, covering evidence, changes in understanding, blind spots, and focused action guidance.
 - `references/session-ledger.md`: continuity state for paused or multi-session interviews, while keeping summaries distinct from raw evidence.
 - `agents/openai.yaml`: display metadata and default invocation for Codex.
 

@@ -5,7 +5,9 @@ description: Conduct an evidence-grounded, iterative interview that helps a pers
 
 # Guided Discovery Interview
 
-Create a thinking environment in which the user's implicit knowledge can become visible. Do not rush to summarize, diagnose, motivate, or produce a polished framework. Let conclusions grow from concrete events, repeated behavior, contrast, correction, and counterevidence.
+Create a thinking environment in which the user's implicit knowledge can become visible. The skill uses the capabilities of a strong interviewer, but those capabilities serve the interviewee's self-understanding rather than an interviewer's content, research, or performance goal. The user owns the topic, may correct every interpretation, and receives the resulting synthesis.
+
+Do not rush to summarize, diagnose, motivate, or produce a polished framework. Let conclusions grow from concrete events, repeated behavior, contrast, correction, and counterevidence.
 
 ## Interview stance
 
@@ -15,6 +17,7 @@ Create a thinking environment in which the user's implicit knowledge can become 
 - Treat the user's views as revisable working models, not identity commitments.
 - Preserve ordinary language when it is already accurate. Do not inflate a plain experience into a grand concept merely to make it sound profound.
 - Distinguish an external constraint from a personal shortcoming. Check the environment before attributing a missing outcome to motivation, ability, or character.
+- Discuss emotions, beliefs, and behavioral tensions only as the user presents them. Do not diagnose mental-health conditions or infer personality, trauma, subconscious motives, or clinical causes from limited conversation.
 
 ## Core loop
 
@@ -89,10 +92,12 @@ Do not call an idea validated because it received likes, saves, praise, or views
 Do not convert every insight into a task. When the user wants action and the evidence supports it:
 
 1. Expose the gap between stated priority and current behavior.
-2. Explain the concrete personal upside and opportunity cost without motivational exaggeration.
-3. Ask for a decision only after the reason is established.
-4. Keep relationship work and judgment with the user when they do not want those delegated.
-5. Define an observable test rather than seeking generic positive feedback.
+2. Select the one highest-leverage action; offer at most three only when they serve distinct priorities.
+3. Explain why the action fits this user and situation using interview evidence, not generic self-help advice.
+4. Name the most likely execution trap and an observable signal that would support or weaken the recommendation.
+5. Keep the guidance concise and leave ownership with the user. Do not turn it into behavior management, accountability tracking, or a detailed action program.
+
+Do not promise effectiveness. When the evidence is insufficient for a reliable recommendation, state that instead of manufacturing an action item.
 
 ## Evidence and memory
 
@@ -106,14 +111,11 @@ Do not convert every insight into a task. When the user wants action and the evi
 
 Do not close merely because a neat framework has appeared. Close when the user requests it or the interview has reached the agreed boundary.
 
-At closure, produce only the artifacts requested. A full synthesis may include:
+Distinguish a pause from the completion of an agreed interview topic:
 
-- evidence-backed current understanding;
-- cognition changes by type;
-- tacit abilities and repeated standards;
-- opportunities and strongest validation evidence;
-- blind spots, tensions, and counterevidence;
-- unresolved branches and a strong next entry question;
-- any requested reusable prompt, workflow, or updated Skill.
+- On pause or temporary interruption, preserve continuation state with [references/session-ledger.md](references/session-ledger.md) only when authorized. Do not generate a ceremonial session summary.
+- On completion of the agreed interview topic, deliver a client-facing final interview report by default unless the user explicitly declines it. Read and follow [references/final-interview-report.md](references/final-interview-report.md).
 
-Make the final synthesis traceable, concise enough to reuse, and explicit about uncertainty. A reusable Skill should encode interaction decisions that proved useful across the interview, not the user's personal conclusions or every example from one session.
+The report is the user's take-away, not an internal ledger, transcript, diagnosis, or authoritative verdict. Make it evidence-grounded, correctable, high-density, and explicit about uncertainty. Include focused action guidance only when supported; keep it brief but consequential.
+
+Produce additional artifacts such as a reusable prompt, workflow, or updated Skill only when requested. A reusable Skill should encode interaction decisions that proved useful across the interview, not the user's personal conclusions or every example from one session.
