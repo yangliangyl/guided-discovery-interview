@@ -12,6 +12,7 @@ Use this toolkit to choose the next question after an interviewee has answered. 
 | Event and terms are clear, but the person's perceived reasoning is missing | Ask for their explanation or decision process |
 | Concrete, complex professional judgment or critical incident | Use selective CTA/CDM decision probes |
 | Answer is still unfolding | Leave space or echo a key phrase instead of adding a new frame |
+| A broad interview is converging on one cause or a proposed action while key context is missing | Apply the parent skill's breadth check; park the provisional finding and ask about one consequential gap |
 | Answer repeats, becomes speculative, or leaves the main question | Stop drilling, synthesize briefly, and return to the conversation map |
 
 Do not ask several rows at once. Choose the question most likely to produce new, relevant evidence.
@@ -136,7 +137,7 @@ These are facilitation moves, not evidence that an interview is deep. Their valu
 Ask silently:
 
 1. Does this question follow from the user's latest words?
-2. Does it advance the main thread rather than display interviewer cleverness?
+2. Does it advance the user's intended interview scope, or only deepen the current branch? If key context is missing, apply the parent skill's breadth check.
 3. Am I requesting recall, meaning, or reasoning—and is that the right level now?
 4. Have I inserted a cause, emotion, or framework the user did not provide?
 5. Is one question enough?

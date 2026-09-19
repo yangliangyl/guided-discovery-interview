@@ -51,11 +51,21 @@ guided-discovery-interview/
 
 ## 安装
 
+| 宿主 | 用户级目录 | 显式调用 | 当前验证状态 |
+| --- | --- | --- | --- |
+| Codex 本地 | `~/.agents/skills/guided-discovery-interview/` | `$guided-discovery-interview` | 按官方目录和语法整理；尚未做宿主行为实测 |
+| Claude Code 本地 | `~/.claude/skills/guided-discovery-interview/` | `/guided-discovery-interview` | 按官方目录和语法整理；尚未做宿主行为实测 |
+| 其他 Agent | 以对应宿主文档为准 | 以对应宿主为准 | 未验证 |
+
+目录与调用语法参考 [OpenAI Codex Skills 文档](https://developers.openai.com/zh-Hans/docs/build-skills)和 [Claude Code Skills 文档](https://code.claude.com/docs/en/skills)。
+
+安装前先确认目标目录不存在；如已有同名目录，请先检查来源、版本和未提交改动，不要直接覆盖。以下命令只克隆 Skill，不会读取日记、项目文件或对话记录。
+
 ### Codex
 
 ```bash
 git clone https://github.com/yangliangyl/guided-discovery-interview.git \
-  ~/.codex/skills/guided-discovery-interview
+  ~/.agents/skills/guided-discovery-interview
 ```
 
 ### Claude Code
@@ -67,9 +77,16 @@ git clone https://github.com/yangliangyl/guided-discovery-interview.git \
 
 如果你同时使用多个 Agent 框架，建议只保留一份实体目录，再通过软链接接入不同框架，避免多份 Skill 分叉。
 
+## 权限与输出
+
+- 普通访谈可以只在对话中进行，不需要写本地文件。
+- 只有在你明确授权后，Agent 才应读取项目、日记或历史材料；授权一个目录不等于授权其他目录。
+- 暂停访谈时是否保存续谈账本需单独确认；完整主题结束后会按 Skill 规则生成可修正的访谈报告。
+- 这是反思与访谈工具，不做心理诊断，也不把暂定解释写成权威结论。
+
 ## 使用示例
 
-直接调用：
+在 Codex 中直接调用：
 
 ```text
 使用 $guided-discovery-interview 采访我。
@@ -88,6 +105,13 @@ git clone https://github.com/yangliangyl/guided-discovery-interview.git \
 使用 $guided-discovery-interview，结合我授权你读取的项目文件和日记采访我。
 把文件当作证据，不要只做内容总结。
 ```
+
+Claude Code 中使用 `/guided-discovery-interview`，其余指令内容相同。
+
+## 可检查示例
+
+- [最小合成访谈](examples/minimal-interview.md)：展示从模糊判断到具体事件、反例与有限结论的短对话流程。
+- [人工评测场景](evals/scenarios.md)与[人工判定表](evals/rubric.md)：列出预期行为、一票否决行为和逐项评分协议；它们是待执行的评测规格，不代表模型已经通过。
 
 ## 建议的测试方式
 

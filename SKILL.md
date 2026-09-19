@@ -33,6 +33,15 @@ Do not rush to summarize, diagnose, motivate, or produce a polished framework. L
 5. Test the interpretation through contrast, counterexample, customer perspective, or a concrete forced choice. Do not force false binaries when options genuinely serve different functions; use a forced choice only to reveal priority.
 6. Return to the unfinished main question after valuable side discussions.
 
+## Check breadth before narrowing
+
+When the user asks to understand their situation, difficulties, and needs broadly, a concrete incident is an entry point, not permission to redefine the interview around its first apparent cause.
+
+- Before committing to one explanation or moving into action design, check what is known about the user's desired change and why it matters, current circumstances, competing priorities and constraints, and what an acceptable outcome would look like. Use existing answers and authorized records; ask only about gaps that could change the interpretation. Do not turn these dimensions into a fixed questionnaire or ask them all at once.
+- Keep explanations such as unclear next steps, fatigue, or weak feedback provisional. An answer consistent with one explanation does not establish that it is the central problem.
+- When an incident yields a plausible explanation, or the next question would select a task, tool, or schedule, compare the branch with the user's original scope. If consequential context is still missing, briefly name the provisional finding, park the branch, and ask one question about that context before prescribing a solution.
+- Preserve depth when the user explicitly wants to examine a narrow incident. Do not widen every interview into a life audit or repeatedly recheck information already established.
+
 ## Choose the next probe
 
 Select probes from the user's latest answer; do not run a visible taxonomy or a fixed sequence.
@@ -51,7 +60,8 @@ Read [references/probing-toolkit.md](references/probing-toolkit.md) when plannin
 
 Silently track:
 
-- the current main thread;
+- the user's intended interview scope and the current main thread;
+- desired changes, current circumstances, constraints, and consequential context still missing;
 - answered and unanswered questions;
 - high-value side branches to revisit;
 - provisional hypotheses and contrary evidence;

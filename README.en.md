@@ -51,11 +51,21 @@ See [SKILL.md](SKILL.md) for the complete operating instructions.
 
 ## Installation
 
+| Host | User-level directory | Explicit invocation | Current validation status |
+| --- | --- | --- | --- |
+| Codex local | `~/.agents/skills/guided-discovery-interview/` | `$guided-discovery-interview` | Paths and syntax aligned with official docs; host behavior not yet tested |
+| Claude Code local | `~/.claude/skills/guided-discovery-interview/` | `/guided-discovery-interview` | Paths and syntax aligned with official docs; host behavior not yet tested |
+| Other Agents | Follow the host's documentation | Host-specific | Not verified |
+
+Directory and invocation syntax follow the [OpenAI Codex Skills documentation](https://developers.openai.com/zh-Hans/docs/build-skills) and [Claude Code Skills documentation](https://code.claude.com/docs/en/skills).
+
+Confirm that the destination does not already exist before installing. If it does, inspect its source, version, and uncommitted changes instead of overwriting it. The commands below only clone the Skill; they do not read journals, project files, or conversation history.
+
 ### Codex
 
 ```bash
 git clone https://github.com/yangliangyl/guided-discovery-interview.git \
-  ~/.codex/skills/guided-discovery-interview
+  ~/.agents/skills/guided-discovery-interview
 ```
 
 ### Claude Code
@@ -67,9 +77,16 @@ git clone https://github.com/yangliangyl/guided-discovery-interview.git \
 
 If you use several Agent frameworks, consider keeping one physical copy and exposing it to each framework with symbolic links. This prevents multiple versions of the Skill from drifting apart.
 
+## Permissions and output
+
+- An ordinary interview can remain inside the conversation and does not require local file writes.
+- The Agent should read projects, journals, or history only after you authorize the specific material; access to one directory does not imply access to others.
+- Saving a continuation ledger when pausing requires separate authorization. When an agreed topic is complete, the Skill produces a correctable interview report under its existing rules.
+- This is a reflection and interviewing tool, not a mental-health diagnostic tool, and provisional interpretations are not authoritative conclusions.
+
 ## Usage examples
 
-Direct invocation:
+Direct invocation in Codex:
 
 ```text
 Use $guided-discovery-interview to interview me.
@@ -88,6 +105,13 @@ With source material:
 Use $guided-discovery-interview to interview me using the project files and journals I authorize you to read.
 Treat the files as evidence rather than merely summarizing them.
 ```
+
+In Claude Code, invoke `/guided-discovery-interview`; the rest of the instruction can stay the same.
+
+## Inspectable examples
+
+- [Minimal synthetic interview](examples/minimal-interview.md) shows a short path from a broad claim to a concrete event, counterexample, and bounded conclusion.
+- [Human evaluation scenarios](evals/scenarios.md) and the [manual scoring rubric](evals/rubric.md) define expected, disqualifying, and observable grading behavior. They are proposed evaluation specifications, not evidence that a model has passed them.
 
 ## How to test it
 
